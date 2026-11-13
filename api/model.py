@@ -1,15 +1,10 @@
 
 """Raccord entre l'API et le modèle TP2."""
 
-import sys
-from pathlib import Path
 from typing import Literal, TypedDict, cast
 
-RACINE = Path(__file__).resolve().parents[1]
-sys.path.insert(0, str(RACINE / "src"))
-
-from predict import charger_modele  # noqa: E402
-from predict import predict as _predict  # noqa: E402
+from sentiment_app.predict import charger_modele
+from sentiment_app.predict import predict as _predict
 
 SEUIL_ABSTENTION = 0.70
 
