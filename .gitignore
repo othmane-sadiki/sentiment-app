@@ -38,3 +38,5 @@ htmlcov/
 
 # TP5
 !data/avis_exemple.csv
+
+dist.zip
